@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: anam
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-chwh-tenant/byoc-app-hlph/anam@sha256:f6b545250c43370836674969c4ab2ab5d4deca181effb627916f52085e38ef68
         name: my-java-quarkus
         ports:
         - containerPort: 8081
