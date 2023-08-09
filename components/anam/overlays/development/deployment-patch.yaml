@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: anam
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-chwh-tenant/byoc-app-hlph/anam@sha256:f6b545250c43370836674969c4ab2ab5d4deca181effb627916f52085e38ef68
+        name: my-java-quarkus
+        resources: {}
+status: {}
